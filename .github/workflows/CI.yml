@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - uses: CompeyDev/setup-rokit@v0.1.2
+        name: Install Rokit
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: axiom-co/setup-pesde@v0.4.1
+        name: Install Pesde Packages
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - uses: CompeyDev/setup-rokit@v0.1.2
+      name: Install Rokit
+      with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Lint
+      run: |
+        selene ./src
+
+  style:
+    name: Styling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check code style
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check src/
