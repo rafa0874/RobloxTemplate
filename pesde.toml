@@ -21,7 +21,7 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-Promise = { wally = "evaera/Promise", version = "^4.0.0" }
+Promise = { wally = "evaera/promise", version = "^4.0.0" }
 Signal = { wally = "stravant/goodsignal", version = "^0.3.0" }
 Trove = { wally = "sleitnick/trove", version = "^1.5.0" }
 UILabs = { wally = "pepeeltoro41/ui-labs", version = "^2.3.8" }
