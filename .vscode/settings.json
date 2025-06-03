@@ -1,4 +1,6 @@
 {
+    "editor.formatOnSave": true,
+
     "luau-lsp.hover.multilineFunctionDefinitions": true,
     "luau-lsp.hover.showTableKinds": true,
     "luau-lsp.plugin.enabled": true,
