@@ -1,7 +1,7 @@
-name = "rafa/voxel"
-version = "0.1.0"
+name = "rafa/template"
+version = "1.0.0"
 authors = ["rafa0874"]
-repository = "https://github.com/rafa0874/voxel"
+repository = "https://github.com/rafa0874/RobloxTemplate"
 license = "MIT"
 
 [target]
