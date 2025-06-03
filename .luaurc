@@ -1,0 +1,21 @@
+{
+  "languageMode": "strict",
+  "globals": [
+      "warn"
+  ],
+  "aliases": {
+      "Lune": "~/.lune/.typedefs/0.9.3/",
+      "Packages": "roblox_packages",
+
+      "Client": "src/Client",
+      "Shared": "src/Shared",
+      "Server": "src/Server",
+
+      "Stories": "src/Client/Stories",
+
+      "Config": "src/Shared/Config",
+      "Types": "src/Shared/Types",
+
+      "Tests": "tests"
+  }
+}

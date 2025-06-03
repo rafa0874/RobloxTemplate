@@ -1,0 +1,38 @@
+{
+  "name": "Voxel",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/Shared"
+      },
+
+      "Packages": {
+        "$path": "roblox_packages"
+      },
+
+      "Tests": {
+        "$path": "tests/Client"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/Server"
+      },
+
+      "Tests": {
+        "$path": "tests/Server"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/Client"
+        }
+      }
+    }
+  }
+}
