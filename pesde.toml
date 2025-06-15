@@ -1,4 +1,4 @@
-name = "rafa/social"
+name = "rafa/template"
 version = "1.0.0"
 authors = ["rafa0874"]
 repository = "https://github.com/rafa0874/RobloxTemplate"
@@ -21,7 +21,6 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-Fusion = { wally = "elttob/fusion", version = "^0.3.0" }
 Promise = { wally = "evaera/promise", version = "^4.0.0" }
 Signal = { wally = "stravant/goodsignal", version = "^0.3.0" }
 Trove = { wally = "sleitnick/trove", version = "^1.5.0" }
